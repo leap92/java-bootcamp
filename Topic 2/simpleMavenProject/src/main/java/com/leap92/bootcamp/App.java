@@ -10,6 +10,8 @@ public class App
 {
     public static void main( String[] args )
     {
+    	System.out.println("Escriba su nombre:");
+    	
     	if (System.console() == null) {
     	      Scanner sc = new Scanner(System.in);
     	      System.out.println("Hola " + sc.next());
