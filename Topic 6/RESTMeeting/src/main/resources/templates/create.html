@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Meeting Form</h1>
+    <form action="#" th:action="@{/meetings/create}" th:object="${meeting}" method="post">
+   	<p>Attendees: <input type="text" th:field="*{meeting.attendees[0].attendee.name}" /></p>
+<!--         <p>Room: <input type="text" th:field="*{room}" /></p> -->
+        <p>Time Slot: <input type="text" th:field="*{timeSlot}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

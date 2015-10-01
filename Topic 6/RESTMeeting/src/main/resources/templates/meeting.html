@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p th:text="'id: ' + ${meeting.id}" />
+    <p th:text="'id: ' + ${meeting.attendees[0].name}" />
+    <p th:text="'timeSlot: ' + ${meeting.timeSlot}" />
+    <a href="/meetings/create">Submit another meeting</a>
+</body>
+</html>
