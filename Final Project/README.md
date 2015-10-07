@@ -1,0 +1,1 @@
+The REST api was tested using Postman (Chrome plug-in)
